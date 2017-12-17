@@ -1,0 +1,64 @@
+{
+  "name": "insight-lip-api",
+  "description": "A Lipcoin blockchain REST and web socket API service for Lipcore Node.",
+  "version": "0.4.5",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lipcoin/insight-lip-api.git"
+  },
+  "contributors": [
+    "Gustavo Cortez <cmgustavo83@gmail.com>",
+    "Ivan Socolsky <jungans@gmail.com>",
+    "Juan Ignacio Sosa Lopez <bechilandia@gmail.com>",
+    "Manuel Araoz <manuelaraoz@gmail.com>",
+    "Matias Alejo Garcia <ematiu@gmail.com>",
+    "Mario Colque <colquemario@gmail.com>",
+    "Patrick Nagurny <patrick@bitpay.com>",
+    "Braydon Fuller <braydon@bitpay.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/lipcoin/insight-lip-api/issues"
+  },
+  "homepage": "https://github.com/lipcoin/insight-lip-api",
+  "license": "MIT",
+  "keywords": [
+    "insight",
+    "insight api",
+    "blockchain",
+    "lipcoin api",
+    "blockchain api",
+    "json",
+    "lipcore"
+  ],
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha -R spec --recursive"
+  },
+  "main": "lib",
+  "bitcoreNode": "lib",
+  "dependencies": {
+    "async": "*",
+    "lipcore-lib": "^0.13.22",
+    "lipcore-message": "^1.0.5",
+    "body-parser": "^1.13.3",
+    "compression": "^1.6.1",
+    "lodash": "^2.4.1",
+    "lru-cache": "^4.0.1",
+    "morgan": "^1.7.0",
+    "request": "^2.64.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "proxyquire": "^1.7.2",
+    "should": "^8.3.1",
+    "sinon": "^1.10.3"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": ""
+}
